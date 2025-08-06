@@ -2,8 +2,8 @@
 
 /* Base styling for all screens */
 .blg_card_img.check {
-  width: 100%;                           /* Full width of card */
-  height: 220px;                         /* Default height for desktop */
+  width: 80%;                           /* Full width of card */
+  height: 320px;                         /* Default height for desktop */
   background-size: cover !important;    /* Ensure image covers container */
   background-position: center center;   /* Center image */
   background-repeat: no-repeat;
