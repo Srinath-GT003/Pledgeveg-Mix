@@ -1,8 +1,8 @@
-/* Feedspot Widget Image Styling – Responsive + Hover Zoom */
+/* Feedspot Widget Image Styling – Responsive + Hover Zoom + Centered */
 
 /* Base styling for all screens */
 .blg_card_img.check {
-  width: 80%;                           /* Full width of card */
+  width: 80%;                            /* Reduced width to allow centering */
   height: 320px;                         /* Default height for desktop */
   background-size: cover !important;    /* Ensure image covers container */
   background-position: center center;   /* Center image */
@@ -11,6 +11,7 @@
   transition: transform 0.6s ease-in-out, box-shadow 0.3s ease;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Light shadow */
+  margin: 0 auto;                        /* ✅ Center horizontally */
 }
 
 /* Smooth zoom effect on hover (for desktop users) */
@@ -22,13 +23,13 @@
 /* Responsive behavior for tablets */
 @media (max-width: 991px) {
   .blg_card_img.check {
-    height: 180px;                      /* Slightly smaller height */
+    height: 180px;
   }
 }
 
 /* Responsive behavior for mobile devices */
 @media (max-width: 600px) {
   .blg_card_img.check {
-    height: 140px;                      /* More compact height for phones */
+    height: 140px;
   }
 }
